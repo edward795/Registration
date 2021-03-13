@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html> 
+
+
+<head> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+ </head>
+
+
+<body>
+  <div class="container" style="height:100%;">
+    <div class="header">
+      <center><img src="https://upload.wikimedia.org/wikipedia/en/6/6f/Cochin_University_of_Science_and_Technology_Logo.png" width="100px" height="100px"/></center>
+      <center><h2 class="headr">Placement Cell,CUCEK</h2></center>
+  <center><h2 class="headr">New Drive Registration</h2></center> 
+
+  <center><marquee scrollamount="20" width="100%" direction="right" height="200px" style="color:red;font:18px;">
+   LTTS-Associate Engineer(4 LPA).
+    </marquee></center>
+
+<div class="container">
+<div id="reg" class="alert alert-danger" role="alert">
+  Active Registrations are Closed!!
+</div>
+</div>
+
+<div class="container">
+<div id="work" class="alert alert-danger" role="alert">
+  registrations accepted only during working hours (9:00am to 6:00pm)!!
+</div>
+</div>
+
+<!-- Trigger/Open The Modal -->
+<button class="button" id="myBtn">Register Here!</button>
+
+<!-- The Modal -->
+ <div id="myModal" class="modal">
+
+
+
+  <!-- Modal content -->
+  <div class="modal-content">
+ 
+<div id="mhead" >
+
+<span class="close">&times;</span>
+<center><h4 class="heading">Register & Upload Resume</h4></center>
+  </div>
+
+
+<div class="fo">
+ 
+<form class="gform pure-form pure-form-stacked" id="form" action="https://script.google.com/macros/s/AKfycbybhPJ92RniwjZtmxAol47PiwzzcpVVGbq53VbgZiWs1kZik7VfR7g01iF_BtxNbxGZFQ/exec" target="my-iframe" method="POST" name="RegForm">
+  <input type="hidden" value="" name="fileContent" id="fileContent">
+  <input type="hidden" value="" name="filename" id="filename">
+  
+  <div class="container">
+             <br>
+			 <div class="form-group">
+			  <label style="color:red;"> Drive Name : </label>
+			  <input required type="text" value="LTTS-Associate Engineer" name="drivename" id="drivename" class="form-control" readonly>
+			  </div>
+			  
+			  <div class="form-group">
+			  <label> Name : </label>
+			  <input required type="text" value="" name="name" id="name" class="form-control">
+			  </div>
+			
+			  <div class="form-group">
+			  <label> Email :</label>
+			  <input required type="text" value="" name="email" id="email"  class="form-control">  
+			  </div>
+			  
+              <div class="form-group">
+              <label> Contact No :</label>
+			  <input required type="text" value="" name="contact" id="contact" class="form-control"> 
+			  </div>
+			  
+			  <div class="form-group">
+			   <label> Reg No :</label>
+			  <input required type="text" value="" name="regno" id="regno" class="form-control"> 
+			  </div>
+			  
+			  <div class="form-group">
+			   <label> Branch :</label>
+			  <select name="branch" id="branch" class="form-control">
+			  <option value="none">Select</option>
+             <option value="CSE">CSE</option>
+             <option value="IT">IT</option>
+             <option value="ECE">ECE</option>
+             <option value="EEE">EEE</option>
+	         <option value="ME">ME</option>
+	         <option value="CE">CE</option>
+	         <option value="MCA">MCA</option>
+            </select>
+			 </div>
+			 
+			 <div class="form-group">
+            <label> Class X% :</label>
+            <input required type="text" value="" name="classx" id="classx" class="form-control"> 
+             </div>
+			 
+			 <div class="form-group">
+            <label> Class XII% :</label>
+			  <input required type="text" value="" name="classxii" id="classxii" class="form-control"> 
+            </div>
+			
+			<div class="form-group">
+             <label> Btech Aggregate % :</label>
+			  <input required type="text" value="" name="btech" id="btech" class="form-control"> 
+			</div>
+			 
+			
+</form></div>
+<iframe name="my-iframe" src="https://script.google.com/macros/s/AKfycbybhPJ92RniwjZtmxAol47PiwzzcpVVGbq53VbgZiWs1kZik7VfR7g01iF_BtxNbxGZFQ/exec" style="display: none;" onload="changed()" ></iframe>
+<div class="container">
+<div id="alert" class="alert alert-danger" role="alert">
+  Fill all the mandatory fields!!
+</div>
+</div>
+<div id="resume" class="container">
+<p id="pro">Select Resume/CV:</p>
+<input class ="but" required id="attach" name="attach" type="file"/><br><br>
+</div>
+<br>
+<div class="container">
+<div id="progress" class="loader">
+  <div class="loaderBar"></div>
+ </div>
+</div><br>
+<div id="bar" class="container">
+<center><p id="myBarr" style="color:skyblue;">20%</p></center>
+</div>
+<div class="container">
+<div id="comment" class="alert alert-info" role="alert">
+<center><p id="comment">Uploading Data To Server...</p></center>
+</div>
+</div>
+
+<div class="container">
+<button id="btnupload" class="button" onclick="UploadFile();">Confirm & Upload Resume</button>
+</div>
+
+
+<center><h3><span id='display'></span></h3></center>
+<center><p><span id='con'></span></p></center>
+</div>
+
+
+
+<div id="mfoot" >
+	<button  id="cancelbtn" onclick="document.getElementById('myModal').style.display='none'" >Cancel</button>
+</div>
+    
+  </div>
+</div>
+
+
+
+
+<div class="footer">
+
+<center><p>&copy; Copyright 2020, Placement Cell,CUCEK</p></center>
+
+</div>
+</div>
+
+
+ <script src="script.js"></script>
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

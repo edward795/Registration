@@ -1,0 +1,408 @@
+
+.he,#alert{
+color:red;
+}
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+button:hover{
+background-color:skyblue;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid black;
+  margin-bottom: 12px;
+}
+
+
+
+.fi{
+color:blue;
+}
+
+
+
+.rre{
+background-color:#E7E4E4;
+padding:20px 40px 20px 40px;
+}
+.button{
+width:100%;
+}
+
+ .waffle{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+.fi{
+width:100%;
+}
+tr:first-child { font-weight:bold; }
+.search{
+background-color:#E7E4E4;
+padding:10px 5px 10px 5px;
+}
+
+
+@media only screen and (max-width:600px) {
+  /* For mobile phones: */
+  .headr,.heading{
+	  font-size:16px;
+  }
+  #display{
+	   font-size:16px;
+  }
+  .he,.rre,.footer {
+    font-size:14px;
+  }
+  .rre{
+  padding:10px 20px 10px 20px;
+  }
+  button{
+  
+  font-size:16px;
+  }
+  .for{
+  padding : 20x 20px 20px 20px;
+}
+ 
+}
+
+.upload{
+padding:0px 10px 0px 10px;
+}
+
+.no{
+padding-left:40px;
+}
+#checking{
+background-color:#E7E4E4;
+
+}
+.sea{
+padding:20px 40px 20px 40px;
+}
+
+#ip{
+ background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid black;
+  margin-bottom: 12px;
+}
+#see{
+display:none;
+}
+
+.click{
+
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.click:hover{
+background-color:skyblue;
+}
+
+.payment{
+
+  background-color:#3D6AD1;
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.payment:hover{
+background-color:#4CAF50;
+}
+
+.accordion {
+  background-color: #eee;
+  color:black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #979798;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+.form-elements {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  width:100%;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.for{
+  padding : 40px 20px 40px 20px;
+}
+
+
+::-webkit-file-upload-button {
+  background: #008B8B;
+  color: white;
+  padding: 0.5em;
+  
+}
+
+::-webkit-file-upload-button:hover{
+ background: #4CAF50;
+}
+
+label{
+float:left;
+}
+#display{
+color:green;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ 
+ 
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  width: 90%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#mhead{
+height:80px;
+background-color:#008B8B;
+}
+#mfoot{
+height:40px;
+background-color:#008B8B;
+padding-bottom:0px;
+}
+
+
+.heading{
+margin-top:0px;
+padding-top:40px;
+color:white;
+}
+  #cancelbtn{
+  padding:10px 20px 6px 20px;
+  margin-top:0px;
+  margin-left:0px;
+  margin-bottom:0px;
+  background-color:#FF0000;
+}  
+#cancelbtn:hover{
+background-color:black;
+}
+.close{
+margin-right:2px;
+}
+.hed{
+color:blue;
+}
+
+
+.loader { 
+  width:500px; 
+  margin:0 auto;
+  border-radius:10px;
+  border:4px solid transparent;
+  position:relative;
+  padding:1px;
+  height:18px;
+  width:100%;
+}
+.loader:before {
+  content:'';
+  border:1px solid #6dd5ed; 
+  border-radius:10px;
+  position:absolute;
+  top:-4px; 
+  right:-4px; 
+  bottom:-4px; 
+  left:-4px;
+}
+.loader .loaderBar { 
+  position:absolute;
+  border-radius:10px;
+  top:0;
+  right:100%;
+  bottom:0;
+  left:0;
+  background:#48b1bf; 
+  width:0;
+  height:10px;
+  animation:borealisBar 2s linear infinite;
+}
+
+@keyframes borealisBar {
+  0% {
+    left:0%;
+    right:100%;
+    width:0%;
+  }
+  10% {
+    left:0%;
+    right:75%;
+    width:25%;
+  }
+  90% {
+    right:0%;
+    left:75%;
+    width:25%;
+  }
+  100% {
+    left:100%;
+    right:0%;
+    width:0%;
+  }
+}
