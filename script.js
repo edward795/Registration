@@ -176,7 +176,7 @@ dd=parseInt(dd);
 
 today = mm + '/' + dd + '/' + yyyy;
 var set_mon=3;
-var set_date=15;
+var set_date=27;
 
 
 if(mm==set_mon && dd>=set_date){
