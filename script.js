@@ -123,6 +123,25 @@ function UploadFile() {
 	document.getElementById("form").style.display = "none";
 	document.getElementById("resume").style.display = "none";
 	document.getElementById("bar").style.display = "block";
+    
+	//event.preventDefault
+
+
+	var reader = new FileReader();
+	var file = document.getElementById('attach').files[0];
+	reader.onload = function(){
+	  document.getElementById('fileContent').value=reader.result;
+	  document.getElementById('filename').value=file.name;
+	  document.getElementById('form').submit();
+	  }
+	reader.readAsDataURL(file);
+	
+	
+	
+	//file.value = '';
+	
+	//return false 
+
 	}
   var elem = document.getElementById("myBarr");   
   var width = 20;
@@ -138,23 +157,7 @@ function UploadFile() {
   }
 
 
-//event.preventDefault
 
-
-  var reader = new FileReader();
-  var file = document.getElementById('attach').files[0];
-  reader.onload = function(){
-    document.getElementById('fileContent').value=reader.result;
-	document.getElementById('filename').value=file.name;
-    document.getElementById('form').submit();
-	}
-  reader.readAsDataURL(file);
-  
-  
-  
-  //file.value = '';
-  
-  //return false 
 }
 	
 	
@@ -188,7 +191,7 @@ if(mm==set_mon && dd>=set_date){
 	modal.style.display = "none";
 	document.getElementById("reg").style.display = "block";
 	
-}else if(hrs<9 || hrs>18){
+}else if(hrs<9 || hrs>23){
 	  modal.style.display = "none";
 	  document.getElementById("work").style.display = "block";
  }else{
