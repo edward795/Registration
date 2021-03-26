@@ -47,6 +47,7 @@ function changed() {
 
 
 function UploadFile() {
+	var flag=0;
 	
 	var name = document.forms["RegForm"]["name"].value; 
 	var email = document.forms["RegForm"]["email"].value; 
@@ -110,6 +111,11 @@ function UploadFile() {
 	document.getElementById("bar").style.display = "none";
 	}else{
 	
+	flag=1;
+	
+    }
+
+	if(flag==1){
 	document.getElementById("progress").style.display="block"; 
 	document.getElementById("btnupload").style.display="none"; 
 	document.getElementById("comment").style.display="block"; 
@@ -117,8 +123,7 @@ function UploadFile() {
 	document.getElementById("form").style.display = "none";
 	document.getElementById("resume").style.display = "none";
 	document.getElementById("bar").style.display = "block";
-	
-    }
+	}
   var elem = document.getElementById("myBarr");   
   var width = 20;
   var id = setInterval(frame, 800);
@@ -176,7 +181,7 @@ dd=parseInt(dd);
 
 today = mm + '/' + dd + '/' + yyyy;
 var set_mon=3;
-var set_date=15;
+var set_date=27;
 
 
 if(mm==set_mon && dd>=set_date){
