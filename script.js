@@ -183,8 +183,8 @@ mm=parseInt(mm);
 dd=parseInt(dd);
 
 today = mm + '/' + dd + '/' + yyyy;
-var set_mon=3;
-var set_date=27;
+var set_mon=4;
+var set_date=2;
 
 
 if(mm==set_mon && dd>=set_date){
