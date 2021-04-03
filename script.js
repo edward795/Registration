@@ -191,7 +191,7 @@ if(mm==set_mon && dd>=set_date){
 	modal.style.display = "none";
 	document.getElementById("reg").style.display = "block";
 	
-}else if(hrs<9 || hrs>23){
+}else if(hrs<9 || hrs>18){
 	  modal.style.display = "none";
 	  document.getElementById("work").style.display = "block";
  }else{
